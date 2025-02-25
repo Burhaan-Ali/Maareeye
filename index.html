@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maareeye</title>
     <script src="tailwind.min.js"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap'); */
         *{
             font-family: "Tapestry" , serif;
         }
@@ -26,9 +27,9 @@
                     <li><a href="#" class="">How to use</a></li>
                     <li><a href="#" class="">Contact Us</a></li>
                 </ul>
-                <button class="btn bg-[#e9b730] text-white text-lg p-1 px-4 rounded hidden md:flex hover:bg-[#fff] hover:text-[#0a4e5c] transition">
-                    Download
-                </button>
+                <a href="#" class="btn bg-[#e9b730] text-white text-lg p-1 px-4 rounded hidden md:flex hover:bg-[#fff] hover:text-[#0a4e5c] transition">
+                    Get Started
+                </a>
                 <div id="menu-icon" class="bg-[#e9b730] px-1 rounded md:hidden">
                     <img src="ionicons.designerpack/menu.svg" class="w-[25px] " alt="">
                     <img src="ionicons.designerpack/close.svg" class="w-[25px] hidden" alt="">
@@ -60,7 +61,7 @@
         </div>
     </div>
     <div class="p-6">
-        <div class="shadow py-8 p-6 grid md:grid-cols-2 grid-cols-1 gap-5 bg-white">
+        <div class="shadow py-8 p-6 grid lg:grid-cols-2 grid-cols-1 gap-5 bg-white">
             <div class="flex justify-center">
                 <img src="img/about-img_Mesa de trabajo 1.png" alt="" class="w-[70%]">
             </div>
@@ -69,108 +70,255 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia deserunt esse odit dignissimos, mollitia amet delectus suscipit ratione dolorem, quibusdam nihil similique? Molestiae dolore placeat provident aspernatur cupiditate ex quasi!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia deserunt esse odit dignissimos, mollitia amet delectus suscipit ratione dolorem, quibusdam nihil similique? Molestiae dolore placeat provident aspernatur cupiditate ex quasi!</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia deserunt esse odit dignissimos, mollitia amet delectus suscipit ratione dolorem, quibusdam nihil similique? Molestiae dolore placeat provident aspernatur cupiditate ex quasi!</p>
-                <button class="w-[200px] bg-[#e9b730] p-3 px-4 rounded-md text-xl text-white hover:bg-[#fff] hover:text-[#0a4e5c] transition">More About Us</button>
+                <button class="w-[200px] shadow-lg hover:border bg-[#e9b730] p-3 px-4 rounded-md text-xl text-white hover:bg-[#fff] hover:text-[#0a4e5c] transition">More About Us</button>
             </div>
 
         </div>
     </div>
     <div class="p-12 flex flex-col gap-5 flex-wrap space-y-8">
         <div class="text-4xl font-bold text-[#0a4e5c]">Powerful Features To Manage <span class="text-[#e9b730]" id="finances">Your Finances</span></div>
-        <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-4">
             <div class="p-3 shadow">
                 <div class="img border">
-                    <img src="img/6.jpg" alt="">
+                    <img src="img/1.jpg" alt="">
                 </div>
-                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Expense Tacking</div>
+                <div class="font-bold mt-3 py-2 text-center md:text-xl text-md bg-[#0a4e5c] text-white">Expense Tacking</div>
             </div>
             <div class="p-3 shadow">
                 <div class="img border">
-                    <img src="img/2.jpg" alt="">
+                    <img src="img/3.jpg" alt="feature">
                 </div>
-                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Budget Management</div>
+                <div class="font-bold mt-3 py-2 text-center md:text-xl text-md bg-[#0a4e5c] text-white">Budget Management</div>
             </div>
             <div class="p-3 shadow">
                 <div class="img border">
-                    <img src="img/about-img_Mesa de trabajo 1.png" alt="">
+                    <img src="img/5.jpg" alt="yuy">
                 </div>
-                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Insights and Reports</div>
+                <div class="font-bold mt-3 py-2 text-center md:text-xl text-md bg-[#0a4e5c] text-white">Insights and Reports</div>
             </div>
             <div class="p-3 shadow">
                 <div class="img border">
                     <img src="img/4.jpg" alt="">
                 </div>
-                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Data Security</div>
+                <div class="font-bold mt-3 py-2 text-center md:text-xl text-md bg-[#0a4e5c] text-white">Data Security</div>
             </div>
         </div>
     </div>
     <div class="p-6">
-        <div class="grid md:grid-cols-2 grid-cols-1 gap4">
-            <div class="p-6 flex flex-col space-y-4">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap4">
+            <div class="p-6 flex flex-col space-y-8">
                 <div class="text-2xl font-bold mb-5">Get Started In 3 Simple Steps</div>
-                <p class="flex gap-2 items-end text-gray-500">
-                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">1</span>
-                    <span class="text-lg"><span class="font-bold t">Sign Up </span> - Create Account in Seconds.</span>
-                </p>
-                <p class="flex items-end text-gray-500">
-                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] me-3 circle bg-[#0a4e5c] text-[#fff] rounded-lg">2</span>
-                    <span class="text-lg"><span class="font-bold t"> Add Your Expense</span> - Manually Enter and import Transactions.</span>
-                </p>
-                <p class="flex gap-2 items-end text-gray-500">
-                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">3</span>
-                    <span class="text-lg"><span class="font-bold t"> Analyze and Save</span> - Get insights and improve your financial habits.</span>
-                </p>
-                <p class="flex gap-2 items-end text-gray-500 mb-5">
-                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">4</span>
-                    <span class="text-lg"><span class="font-bold t"> Set Budgets and goals</span> - Track spending and reach Your Saving goals.</span>
-                </p>
-                <button class="md:w-[200px] w-auto  bg-[#e9b730] p-3 px-4 rounded-md text-xl text-white hover:bg-[#fff] hover:text-[#0a4e5c] transition">Try Now</button>
+                <div class="flex flex-col space-y-4">
+                    <div class="flex gap-2 items-end text-gray-500 ">
+                        <div class="flex justify-center  items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">1</div>
+                        <div class="text-lg  ">
+                            <span class="font-bold ">Sign Up </span> - Create Account in Seconds.
+                        </div>
+                    </div>
+                    <div class="flex items-end text-gray-500">
+                        <div class="flex justify-center items-center text-3xl w-[40px] h-[40px] me-3 circle bg-[#0a4e5c] text-[#fff] rounded-lg">2</div>
+                        <div class="text-lg  ">
+                            <span class="font-bold t"> Add Your Expense</span> - Manually Enter and import Transactions.
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-end text-gray-500">
+                        <div class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">3</div>
+                        <div class="text-lg ">
+                            <span class="font-bold t"> Analyze and Save</span> - Get insights and improve your financial habits.
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-end text-gray-500 mb-5">
+                        <div class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">4</div>
+                        <div class="text-lg  ">
+                            <span class="font-bold t"> Set Budgets and goals</span> - Track spending and reach Your Saving goals.
+                        </div>
+                    </div>
+                </div>
+                <button class="md:w-[200px] shadow-lg hover:border w-auto  bg-[#e9b730] p-3 px-4 rounded-md text-xl text-white hover:bg-[#fff] hover:text-[#0a4e5c] transition">Try Now</button>
             </div>
-            <div class="p-6 md:flex justify-center hidden">
+            <div class="p-6 lg:flex justify-center hidden">
                 <img src="img/about-img_Mesa de trabajo 1.png" class="w-[70%]" alt="">
             </div>
         </div>
     </div>
-
-
-    <script>
-        let menu = document.querySelector("#menu")
-        let menuIcon = document.querySelector("#menu-icon")
-        menuIcon.addEventListener("click",()=>{
-            menu.classList.toggle("hidden")
-            menuIcon.children[0].classList.toggle("hidden")
-            menuIcon.children[1].classList.toggle("hidden")
-        })
-        
-        
-
-        const textTyper = (text,elementId,repeat)=>{
-            let element = document.querySelector(`#${elementId}`)
-            element.innerHTML = ""
-            text.split("").forEach((letter,index)=>{
-                setTimeout(()=>{
-                    element.innerHTML +=letter
-                    if(index === text.length -1){
-                       if( repeat === 1){
-                            setTimeout(textTyper(text,elementId,repeat),1000)
-                       }
-                    }
-                },index * 400)
-            })
+    <div class="p-6">
+        <div class="text-5xl text-bold p-6">Frequently asked Questions</div>
+        <div class="grid grid-cols-1 gap-4 p-6">
+            <details class="py-2">
+                <summary class="text-3xl py-1 cursor-pointer">What is this app do?</summary>
+                <p class="text-xl ps-1 text-[#0008]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!</p>
+            </details>
+            <details class="py-2">
+                <summary class="text-3xl py-1 cursor-pointer">What is this app do?</summary>
+                <p class="text-xl ps-1 text-[#0008]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!</p>
+            </details>
+            <details class="py-2">
+                <summary class="text-3xl py-1 cursor-pointer">What is this app do?</summary>
+                <p class="text-xl ps-1 text-[#0008]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!</p>
+            </details>
+            <details class="py-2">
+                <summary class="text-3xl py-1 cursor-pointer">What is this app do?</summary>
+                <p class="text-xl ps-1 text-[#0008]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!</p>
+            </details>
+        </div>
+    </div> 
+    <div class="p-6 bg-[#0a4e5c] ">
+        <div class="px-6 text-center pb-12 text-6xl font-bold text-white">Our Users Say</div>
+        <div class="p-6 relative h-[50vh]">
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute top-[20%] md:left-[63%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute  shadow-lg top-[7%] md:left-[45%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute shadow-lg top-[25%] md:left-[25%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute  shadow-lg top-[25%] md:left-[55%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute  shadow-lg top-[60%] md:left-[20%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute top-[30%] md:left-[70%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute shadow-lg top-[20%] md:left-[10%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
+            <div class="w-[70px] h-[70px] border p-2 hover:w-[400px] hover:h-[250px] hover:rounded-lg rounded-full overflow-hidden transition absolute shadow-lg top-[40%] md:left-[40%] left-[0%] bg-[#fff] hover:z-10">
+                <div class="flex">
+                    <img src="img/3.jpg" alt="" srcset="" class="w-[50px] h-[50px] rounded-full group">
+                    <div class="ms-4">
+                        <div class="font-bold">Burhan</div>
+                        <div class="">Customer</div>
+                    </div>
+                </div>
+                <p class="text-gray-500 mt-7">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod.
+                </p>
+                <div class="grid grid-cols-5 gap-3 w-[100px] pt-3 text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+            </div>
             
-        }
-        textTyper(" Track Save and Control","track",0)
-        textTyper(" Your Finances","finances",1)
-
-
-        const carCreator = (elementId,arr)=>{
-            let element = document.querySelector(`#${elementId}`)
-
-            arr.forEach((item)=>{
-
-            })
-
-        }
-        
-    </script>
+    </div>
+<script src="app.js"></script>
 </body>
 </html>
