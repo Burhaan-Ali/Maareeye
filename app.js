@@ -23,8 +23,8 @@ const textTyper = (text,elementId,repeat)=>{
     })
     
 }
-// textTyper(" Track Save and Control","track",0)
-// textTyper(" Your Finances","finances",1)
+textTyper(" Track Save and Control","track",0)
+textTyper(" Your Finances","finances",1)
 
 
 const carCreator = (elementId,arr)=>{
