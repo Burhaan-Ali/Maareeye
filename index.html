@@ -74,6 +74,64 @@
 
         </div>
     </div>
+    <div class="p-12 flex flex-col gap-5 flex-wrap space-y-8">
+        <div class="text-4xl font-bold text-[#0a4e5c]">Powerful Features To Manage <span class="text-[#e9b730]" id="finances">Your Finances</span></div>
+        <div class="grid md:grid-cols-4 grid-cols-1 gap4">
+            <div class="p-3 shadow">
+                <div class="img border">
+                    <img src="img/6.jpg" alt="">
+                </div>
+                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Expense Tacking</div>
+            </div>
+            <div class="p-3 shadow">
+                <div class="img border">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Budget Management</div>
+            </div>
+            <div class="p-3 shadow">
+                <div class="img border">
+                    <img src="img/about-img_Mesa de trabajo 1.png" alt="">
+                </div>
+                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Insights and Reports</div>
+            </div>
+            <div class="p-3 shadow">
+                <div class="img border">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="font-bold mt-3 py-2 text-center text-2xl bg-[#0a4e5c] text-white">Data Security</div>
+            </div>
+        </div>
+    </div>
+    <div class="p-6">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap4">
+            <div class="p-6 flex flex-col space-y-4">
+                <div class="text-2xl font-bold mb-5">Get Started In 3 Simple Steps</div>
+                <p class="flex gap-2 items-end text-gray-500">
+                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">1</span>
+                    <span class="text-lg"><span class="font-bold t">Sign Up </span> - Create Account in Seconds.</span>
+                </p>
+                <p class="flex items-end text-gray-500">
+                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] me-3 circle bg-[#0a4e5c] text-[#fff] rounded-lg">2</span>
+                    <span class="text-lg"><span class="font-bold t"> Add Your Expense</span> - Manually Enter and import Transactions.</span>
+                </p>
+                <p class="flex gap-2 items-end text-gray-500">
+                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">3</span>
+                    <span class="text-lg"><span class="font-bold t"> Analyze and Save</span> - Get insights and improve your financial habits.</span>
+                </p>
+                <p class="flex gap-2 items-end text-gray-500 mb-5">
+                    <span class="flex justify-center items-center text-3xl w-[40px] h-[40px] circle bg-[#0a4e5c] text-[#fff] rounded-lg">4</span>
+                    <span class="text-lg"><span class="font-bold t"> Set Budgets and goals</span> - Track spending and reach Your Saving goals.</span>
+                </p>
+                <button class="md:w-[200px] w-auto  bg-[#e9b730] p-3 px-4 rounded-md text-xl text-white hover:bg-[#fff] hover:text-[#0a4e5c] transition">Try Now</button>
+            </div>
+            <div class="p-6 md:flex justify-center hidden">
+                <img src="img/about-img_Mesa de trabajo 1.png" class="w-[70%]" alt="">
+            </div>
+        </div>
+    </div>
+
+
     <script>
         let menu = document.querySelector("#menu")
         let menuIcon = document.querySelector("#menu-icon")
@@ -85,20 +143,33 @@
         
         
 
-        const textTyper = (text,elementId)=>{
+        const textTyper = (text,elementId,repeat)=>{
             let element = document.querySelector(`#${elementId}`)
             element.innerHTML = ""
             text.split("").forEach((letter,index)=>{
                 setTimeout(()=>{
                     element.innerHTML +=letter
                     if(index === text.length -1){
-                        setTimeout(textTyper("hello"),4000)
+                       if( repeat === 1){
+                            setTimeout(textTyper(text,elementId,repeat),1000)
+                       }
                     }
                 },index * 400)
             })
             
         }
-        textTyper("Track Save and Control","track")
+        textTyper(" Track Save and Control","track",0)
+        textTyper(" Your Finances","finances",1)
+
+
+        const carCreator = (elementId,arr)=>{
+            let element = document.querySelector(`#${elementId}`)
+
+            arr.forEach((item)=>{
+
+            })
+
+        }
         
     </script>
 </body>
