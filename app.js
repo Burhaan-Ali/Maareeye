@@ -1,8 +1,8 @@
 // navigation
 $("#menu-icon").on("click",()=>{
-    $("#menu").slideToggle("hidden")
-    $("#menu-bar").slideToggle("hidden")
-    $("#cancel-bar").slideToggle("hidden")
+    $("#menu").slideToggle()
+    $("#menu-bar").slideToggle()
+    $("#cancel-bar").slideToggle()
 })
 
 
@@ -62,6 +62,36 @@ features.map((feature)=>{
         </div>
     `
 })
+// Frequently asked questions(FAQ)
+const faqs = [
+    {
+        question:"What is this app do?",
+        ans:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!"
+    },
+    {
+        question:"Is This app Secure?",
+        ans:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!"
+    },
+    {
+        question:"How to create a budget?",
+        ans:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vitae nobis accusantium ipsum rerum exercitationem asperiores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!"
+    },
+    {
+        question:"Can this app save money?",
+        ans:"speriores reiciendis animi? Eaque, eum voluptatem consequatur unde maxime officia dicta aliquid ut hic facilis!"
+    }
+]
+
+faqs.forEach((faq)=>{
+    document.querySelector("#faq").innerHTML +=`
+         <details class="py-2">
+                <summary class="text-2xl text-gray-600 py-1 cursor-pointer">${faq.question}</summary>
+                <p class="text-xl ps-1 text-[#0008]">${faq.ans}</p>
+            </details>
+        `
+})
+
+
 
 // testimonial
 const testmonials=[
@@ -74,35 +104,35 @@ const testmonials=[
     },
     {
         style:"top-[7%] left-[45%]  hover:md:left-[45%]",
-        img:"img/3.jpg",
+        img:"img/4.jpg",
         name:"Liibaan Ciyaaye",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
     },
     {
         style:"top-[25%] left-[25%]  hover:md:left-[25%]",
-        img:"img/3.jpg",
+        img:"img/6.jpg",
         name:"Hamdi Muuse",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
     },
     {
         style:"md:top-[25%] top-[50%] left-[55%]  hover:md:left-[55%]",
-        img:"img/3.jpg",
+        img:"img/1.jpg",
         name:"Qaali Ali",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
     },
     {
         style:"top-[60%] left-[20%]  hover:md:left-[20%]",
-        img:"img/3.jpg",
+        img:"img/2.jpg",
         name:"abdulle mohamed",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
     },
     {
         style:"top-[30%] left-[70%]  hover:md:left-[70%]",
-        img:"img/3.jpg",
+        img:"img/5.jpg",
         name:"Fooleey nuurre",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
@@ -116,7 +146,7 @@ const testmonials=[
     },
     {
         style:"md:top-[20%] top-[10%] left-[63%]  hover:md:left-[63%]",
-        img:"img/3.jpg",
+        img:"img/6.jpg",
         name:"Ahmed Jamac",
         type:"Customer",
         speech:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et iusto explicabo ducimus magnam fugit dolore eum, architecto hic nesciunt veniam incidunt, velit laboriosam. Minus, quod."
@@ -145,3 +175,4 @@ testmonials.forEach((person)=>{
             </div>
     `
 })
+
